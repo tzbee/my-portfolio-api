@@ -1,0 +1,48 @@
+// index.scss
+
+// Color palette and fonts
+@import './colors';
+@import './fonts';
+
+// Components
+@import './App';
+@import './menu';
+@import './AboutMe';
+@import './ProjectList';
+@import './Contact';
+@import './TagList';
+@import './MyProjects';
+
+html,
+body {
+	width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	min-height: 100vh;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+}
+
+.user-select-disabled {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

@@ -1,0 +1,42 @@
+// menu.scss
+
+.menu {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.MenuItems {
+		display: flex;
+		flex-flow: row;
+		color: $LYNX_WHITE;
+		font-family: 'Viga', sans-serif;
+
+		.MenuItem {
+			padding-bottom: 1em;
+			margin: 0 1.8em 0 1.8em;
+			box-sizing: border-box;
+			display: flex;
+			flex-flow: row;
+			color: $LYNX_WHITE;
+			font-family: 'Viga', sans-serif;
+			font-size: 1.5em;
+			cursor: pointer;
+			border-bottom: solid 0.2em rgba(0, 0, 0, 0);
+			outline: none;
+
+			&:hover:not(.MenuItem--selected) {
+				color: $HINT_OF_PENSIVE;
+			}
+			&.MenuItem--selected {
+				border-bottom: solid 0.2em $FLOWER;
+			}
+		}
+	}
+}

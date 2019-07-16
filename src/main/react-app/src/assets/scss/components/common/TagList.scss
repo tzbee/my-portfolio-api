@@ -1,0 +1,32 @@
+// TagList.scss
+
+.TagList {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	.Tag {
+		cursor: pointer;
+		font-family: Viga;
+		font-size: 1.2em;
+		color: $LYNX_WHITE;
+		padding: 0.2em 0.4em 0.2em 0.4em;
+		border: solid 0.1em $LYNX_WHITE;
+		border-radius: 0.2em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0.5em;
+		background-color: rgba(0, 0, 0, 0.2);
+
+		&:hover {
+			color: $HINT_OF_PENSIVE;
+			border-color: $HINT_OF_PENSIVE;
+		}
+
+		&.Tag-selected {
+			color: $FLOWER;
+			border-color: $FLOWER;
+		}
+	}
+}
