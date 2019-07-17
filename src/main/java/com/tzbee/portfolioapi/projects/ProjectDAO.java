@@ -1,19 +1,27 @@
 package com.tzbee.portfolioapi.projects;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import java.util.List;
 
 @Repository
+@Transactional
 public class ProjectDAO {
-    public List<Project> getAllProjects(){
-        List<Project> projects = new ArrayList();
-        Project project1 = new Project("Project 1");
-        Project project2 = new Project("Project 2");
-        projects.add(project1);
-        projects.add(project2);
 
-        return projects;
+    @PersistenceContext
+    private EntityManager entityManager;
+
+    public List<Project> findAll() {
+        Query query = entityManager.createNamedQuery("query_find_all_projects", Project.class);
+        return query.getResultList();
+    }
+
+    public long insert(Project project){
+        entityManager.persist(project);
+        return project.getId();
     }
 }

@@ -13,7 +13,11 @@ public class ProjectService {
     ProjectDAO projectDAO;
 
     public List<Project> getAllProjects() {
-        return projectDAO.getAllProjects();
+        return projectDAO.findAll();
+    }
+
+    public long addProject(Project project){
+        return projectDAO.insert(project);
     }
 
 }
