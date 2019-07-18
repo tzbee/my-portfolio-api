@@ -2,6 +2,7 @@ package com.tzbee.portfolioapi;
 
 import com.tzbee.portfolioapi.projects.Project;
 import com.tzbee.portfolioapi.projects.ProjectService;
+import com.tzbee.portfolioapi.tags.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +25,8 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		log.info("===============");
-		projectService.addProject(new Project("Hallooo"));
-		projectService.addProject(new Project("Hello"));
+		projectService.addProject(new Project("Hallooo", Tag.JAVA, Tag.JAVASCRIPT));
+		projectService.addProject(new Project("Hello", Tag.HTML, Tag.CSS));
 		projectService.addProject(new Project("Hyaa"));
 		List<Project> projects = projectService.getAllProjects();
 

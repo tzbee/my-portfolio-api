@@ -16,7 +16,7 @@ public class ProjectService {
         return projectDAO.findAll();
     }
 
-    public long addProject(Project project){
+    public long addProject(Project project) {
         return projectDAO.insert(project);
     }
 
