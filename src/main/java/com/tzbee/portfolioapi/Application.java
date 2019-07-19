@@ -25,15 +25,5 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		projectService.addProject(new Project("Hallooo", Tag.JAVA, Tag.JAVASCRIPT));
-		projectService.addProject(new Project("Hello", Tag.HTML, Tag.CSS));
-		projectService.addProject(new Project("Hyaa"));
-		List<Project> projects = projectService.getAllProjects();
-
-		for(Project project:projects){
-			log.info(project.getName());
-		}
-
-		log.info("===============");
 	}
 }
