@@ -20,6 +20,7 @@ public class Project {
 
     @ElementCollection(targetClass = Tag.class)
     @Enumerated(EnumType.STRING)
+    @JoinTable(name="project_tags",joinColumns=@JoinColumn(name="project_id"))
     private Set<Tag> tags;
 
     protected Project() {
