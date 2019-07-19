@@ -1,5 +1,6 @@
 package com.tzbee.portfolioapi.tags;
 
+import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum Tag {
     JAVASCRIPT("JavaScript"),
@@ -13,6 +14,7 @@ public enum Tag {
         this.name = name;
     }
 
+    @JsonValue
     @Override
     public String toString() {
         return name;

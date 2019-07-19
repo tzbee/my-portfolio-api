@@ -13,27 +13,44 @@ public class Project {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "project_id")
     private Long id;
 
     private String name;
 
     @ElementCollection(targetClass = Tag.class)
     @Enumerated(EnumType.STRING)
-    @JoinTable(name="project_tags",joinColumns=@JoinColumn(name="project_id"))
+    @JoinTable(name = "project_tags", joinColumns = @JoinColumn(name = "project_id"))
     private Set<Tag> tags;
+
+    private String url;
+    private String imgURL;
 
     protected Project() {
     }
 
-    public Project(String name) {
+    public Project(String name, String url, String imgURL,Tag... tags) {
         this.name = name;
+        this.url = url;
+        this.imgURL = imgURL;
+        this.tags = new HashSet<Tag>(Arrays.asList(tags));
     }
 
-    public Project(String name, Tag... tags) {
-        this(name);
-        this.tags = new HashSet<>(Arrays.asList(tags));
+    public String getImgURL() {
+        return imgURL;
     }
+
+    public void setImgURL(String imgURL) {
+        this.imgURL = imgURL;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
 
     public Long getId() {
         return id;
