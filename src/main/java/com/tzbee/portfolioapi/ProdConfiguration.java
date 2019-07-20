@@ -15,7 +15,7 @@ public class ProdConfiguration {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/projects").allowedOrigins("https://my-portfolio-new-front-end.herokuapp.com/");
+                registry.addMapping("/api/projects").allowedOrigins("*");
             }
         };
     }
