@@ -1,0 +1,111 @@
+-
+  title: This portfolio
+  thumbnail: /img/projects/pj3_thb.png
+  url: /
+  tags:
+    - HTML5
+    - CSS
+    - JavaScript
+    - React
+    - Responsive
+    - Express.js
+    - Node.js
+    - Webpack
+    - Sass
+
+-
+  title: Nutricount
+  thumbnail: /img/projects/pj1_thb.png
+  url: http://www.nutricount.info
+  tags:
+    - HTML5
+    - CSS
+    - JavaScript
+    - React
+    - Redux
+    - Responsive
+    - Express.js
+    - Node.js
+    - Webpack
+    - Sass
+    - RESTful API
+
+-
+  title: Web Feeds
+  thumbnail: /img/projects/Octocat.png
+  url: https://github.com/tzbee/web-feed
+  tags:
+    - JavaScript
+    - Node.js
+    - GitHub
+
+-
+  title: Web Feeds chrome extension
+  thumbnail: /img/projects/Octocat.png
+  url: https://github.com/tzbee/web-feed-ext
+  tags:
+    - HTML5
+    - CSS
+    - Chrome
+    - JavaScript
+    - React
+    - Redux
+    - JQuery
+    - Webpack
+    - GitHub
+    - Sass
+
+-
+  title: Feedback System
+  thumbnail: /img/projects/Octocat.png
+  url: https://github.com/tzbee/feedback
+  tags:
+    - HTML5
+    - CSS
+    - Chrome
+    - Java
+    - Hibernate
+    - PostgreSQL
+    - RESTful API
+    - Servlet
+    - JavaScript
+    - JQuery
+    - GitHub
+
+-
+  title: Connect 4
+  thumbnail: /img/projects/pj2_thb.png
+  url: http://connect4.tzbee.me
+  tags:
+    - HTML5
+    - CSS
+    - JavaScript
+    - Responsive
+    - BackboneJS
+    - AI
+    - Socket.io
+    - JQuery
+    - Express.js
+    - Node.js
+    - Game
+    - Grunt
+
+-
+  title: Tic Tac Toe
+  thumbnail: /img/projects/tictactoe_thb.png
+  url: http://tictactoe.tzbee.me
+  tags:
+    - HTML5
+    - CSS
+    - JavaScript
+    - Game
+    - AI
+
+-
+  title: All projects
+  thumbnail: /img/projects/GitHub-Mark-120px-plus.png
+  url: https://github.com/tzbee
+  tags:
+    - '*'
+
+

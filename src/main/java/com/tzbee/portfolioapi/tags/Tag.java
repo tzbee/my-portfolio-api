@@ -8,7 +8,26 @@ public enum Tag {
     HTML("HTML"),
     CSS("CSS"),
     HTML5("HTML5"),
-    REACT("React");
+    REACT("React"),
+    RESPONSIVE("Responsive"),
+    EXPRESS_JS("Express.js"),
+    NODE_JS("Node.js"),
+    WEBPACK("Webpack"),
+    SASS("Sass"),
+    REDUX("Redux"),
+    RESTFUL_API("RESTful API"),
+    GITHUB("GitHub"),
+    CHROME("Chrome"),
+    JQUERY("JQuery"),
+    HIBERNATE("Hibernate"),
+    POSTGRES_SQL("PostgreSQL"),
+    SERVLET("Servlet"),
+    BACKBONE_JS("BackboneJS"),
+    SOCKET_IO("Socket.io"),
+    GAME("Game"),
+    GRUNT("Grunt"),
+    ALL("*"),
+    AI("AI");
 
     private String name;
 
