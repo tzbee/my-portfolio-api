@@ -18,3 +18,5 @@ public class ProdConfiguration {
                 registry.addMapping("/api/projects").allowedOrigins("https://my-portfolio-new-front-end.herokuapp.com/");
             }
         };
+    }
+}
