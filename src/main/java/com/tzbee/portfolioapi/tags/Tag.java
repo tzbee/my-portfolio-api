@@ -27,7 +27,8 @@ public enum Tag {
     GAME("Game"),
     GRUNT("Grunt"),
     ALL("*"),
-    AI("AI");
+    AI("AI"),
+    SPRING_BOOT("Spring Boot");
 
     private String name;
 
