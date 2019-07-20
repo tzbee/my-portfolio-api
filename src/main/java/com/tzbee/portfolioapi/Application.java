@@ -9,11 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
-import org.springframework.context.annotation.Bean;
-import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
-
-import java.math.BigDecimal;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner {
@@ -28,7 +23,7 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		projectService.addProject(new Project("This portfolio","http://www.aminetolba.me/","portolio.png", Tag.JAVA, Tag.JAVASCRIPT));
+		projectService.addProject(new Project("This portfolio","/img/projects/pj3_thb.png","/", Tag.HTML5, Tag.JAVASCRIPT,Tag.CSS,Tag.REACT));
 	}
 
 

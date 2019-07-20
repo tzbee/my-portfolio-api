@@ -6,7 +6,9 @@ public enum Tag {
     JAVASCRIPT("JavaScript"),
     JAVA("Java"),
     HTML("HTML"),
-    CSS("CSS");
+    CSS("CSS"),
+    HTML5("HTML5"),
+    REACT("React");
 
     private String name;
 

@@ -15,42 +15,26 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String name;
+    private String title;
+
+    private String thumbnail;
+
+    private String url;
 
     @ElementCollection(targetClass = Tag.class)
     @Enumerated(EnumType.STRING)
     @JoinTable(name = "project_tags", joinColumns = @JoinColumn(name = "project_id"))
     private Set<Tag> tags;
 
-    private String url;
-    private String imgURL;
-
     protected Project() {
     }
 
-    public Project(String name, String url, String imgURL,Tag... tags) {
-        this.name = name;
+    public Project(String title, String thumbnail, String url,Tag... tags) {
+        this.title = title;
+        this.thumbnail = thumbnail;
         this.url = url;
-        this.imgURL = imgURL;
-        this.tags = new HashSet<Tag>(Arrays.asList(tags));
+        this.tags = new HashSet<>(Arrays.asList(tags));
     }
-
-    public String getImgURL() {
-        return imgURL;
-    }
-
-    public void setImgURL(String imgURL) {
-        this.imgURL = imgURL;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
 
     public Long getId() {
         return id;
@@ -60,12 +44,28 @@ public class Project {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getThumbnail() {
+        return thumbnail;
+    }
+
+    public void setThumbnail(String thumbnail) {
+        this.thumbnail = thumbnail;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public Set<Tag> getTags() {
