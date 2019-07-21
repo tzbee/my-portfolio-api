@@ -22,7 +22,7 @@ public enum Tag {
     HIBERNATE("Hibernate"),
     POSTGRES_SQL("PostgreSQL"),
     SERVLET("Servlet"),
-    BACKBONE_JS("BackboneJS"),
+    BACKBONE_JS("Backbone.js"),
     SOCKET_IO("Socket.io"),
     GAME("Game"),
     GRUNT("Grunt"),
