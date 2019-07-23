@@ -29,7 +29,7 @@ public class Project {
     protected Project() {
     }
 
-    public Project(String title, String thumbnail, String url,Tag... tags) {
+    public Project(String title, String thumbnail, String url, Tag... tags) {
         this.title = title;
         this.thumbnail = thumbnail;
         this.url = url;
@@ -76,5 +76,14 @@ public class Project {
         this.tags = tags;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        Project otherProject = (Project) obj;
+        return this.id == otherProject.id
+                && this.title.equals(otherProject.title)
+                && this.thumbnail.equals(otherProject.thumbnail)
+                && this.url.equals(otherProject.url)
+                && this.tags.equals(otherProject.tags);
 
+    }
 }
